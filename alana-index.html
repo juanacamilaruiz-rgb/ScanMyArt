@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel Universe</title>
+  <style>
+    :root {
+      --red: #e62429;
+      --dark: #0b0b0f;
+      --gold: #f7d154;
+      --white: #f5f5f5;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #050505, #1c1c24);
+      color: var(--white);
+    }
+
+    header {
+      background: radial-gradient(circle at top, #2a2a2a, #0b0b0f 70%);
+      padding: 40px 20px 60px;
+      border-bottom: 4px solid var(--red);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .header-image {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid var(--red);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .header-text {
+      text-align: center;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #d9d9d9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 30px 20px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-card, .info-card, .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .hero-card h1 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: var(--gold);
+    }
+
+    .hero-card p {
+      line-height: 1.6;
+      color: #e4e4e4;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: var(--red);
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover { transform: scale(1.04); }
+
+    .info-card h2 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    .info-card ul {
+      padding-left: 18px;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .character-picker {
+      margin-top: 32px;
+    }
+
+    .character-picker h2 {
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .character-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .character-btn {
+      display: block;
+      padding: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      color: var(--white);
+      text-decoration: none;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .character-btn:hover {
+      transform: translateY(-4px);
+      border-color: var(--red);
+    }
+
+    .character-btn span {
+      display: block;
+      color: var(--gold);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .character-btn small {
+      color: #d9d9d9;
+      line-height: 1.5;
+    }
+
+    .card h3 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #d7d7d7;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #bcbcbc;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 800px) {
+      .hero, .grid, .character-buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img class="header-image" src="https://www.parquedelconocimiento.com/images/2018/09/20181003_venom-1280x720.jpg" alt="Venom" />
+      <div class="header-text">
+        <div class="logo">Marvel Universe</div>
+        <p class="subtitle">Una página inspirada en el universo cinematográfico de Marvel, con energía, héroes y acción.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <a class="btn" href="ART.html" style="margin-bottom: 20px;">Volver a ART</a>
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Elige tu héroe</h1>
+        <p>Desde los héroes más rápidos hasta los más poderosos, el universo Marvel está lleno de valentía, sacrificio y aventura. Esta página muestra una pequeña muestra de ese mundo épico.</p>
+        <a class="btn" href="#heroes">Explorar héroes</a>
+      </div>
+      <div class="info-card">
+        <h2>¿Qué encontrarás?</h2>
+        <ul>
+          <li>Estilo visual inspirado en Marvel</li>
+          <li>Sección de héroes destacados</li>
+          <li>Diseño moderno y responsive</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="heroes" class="grid">
+      <a class="card" href="spiderman.html" style="text-decoration:none; display:block;">
+        <h3>Spider-Man</h3>
+        <p>Agilidad, reflejos y un sentido de responsabilidad que lo convierte en uno de los héroes más queridos.</p>
+      </a>
+      <a class="card" href="ironman.html" style="text-decoration:none; display:block;">
+        <h3>Iron Man</h3>
+        <p>Genio, industria y coraje. Su tecnología combina innovación con una gran personalidad.</p>
+      </a>
+      <a class="card" href="thor.html" style="text-decoration:none; display:block;">
+        <h3>Thor</h3>
+        <p>El dios del trueno, con fuerza incomparable y un espíritu noble que lo destaca entre los más grandes.</p>
+      </a>
+    </section>
+
+    <section class="character-picker">
+      <h2>Elige a otro personaje</h2>
+      <div class="character-buttons">
+        <a class="character-btn" href="hawkeye.html">
+          <span>Hawkeye</span>
+          <small>Precisión, disciplina y un talento excepcional con el arco y la flecha.</small>
+        </a>
+        <a class="character-btn" href="black-widow.html">
+          <span>Black Widow</span>
+          <small>Agilidad, estrategia y una historia intensa marcada por valentía y sacrificio.</small>
+        </a>
+        <a class="character-btn" href="captain-america.html">
+          <span>Captain America</span>
+          <small>Coraje, liderazgo y un sentido de justicia que lo convierte en un símbolo.</small>
+        </a>
+        <a class="character-btn" href="inicio_html.html">
+          <span>Volver al inicio</span>
+          <small>Regresa a la página principal para explorar más héroes.</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Diseño creado con temática Marvel</p>
+  </footer>
+</body>
+</html>

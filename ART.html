@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ART</title>
+  <style>
+    :root {
+      --bg: #f7f2ea;
+      --accent: #6b4f3f;
+      --accent2: #a97c50;
+      --text: #2f241d;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: linear-gradient(135deg, #fffaf3, #f2e4d4);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255,255,255,0.8);
+      border: 2px solid var(--accent);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      color: var(--accent);
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.04);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ART</h1>
+    <p>Bienvenidos a una página inspirada en creatividad, arte y expresión personal.</p>
+    <div class="buttons">
+      <a class="btn" href="juana-camila.html">Juana Camila</a>
+      <a class="btn" href="alana-index.html">Alana Cortes</a>
+    </div>
+  </div>
+</body>
+</html>
