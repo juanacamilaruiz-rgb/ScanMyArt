@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#fff8f3"/>
+  <circle cx="450" cy="300" r="220" fill="#f0d6bf"/>
+  <path d="M310 250c0-110 90-170 140-170s140 60 140 170v70H310z" fill="#8c6a4f"/>
+  <ellipse cx="390" cy="284" rx="30" ry="44" fill="#493423"/>
+  <ellipse cx="510" cy="284" rx="30" ry="44" fill="#493423"/>
+  <circle cx="390" cy="292" r="9" fill="#fff"/>
+  <circle cx="510" cy="292" r="9" fill="#fff"/>
+  <path d="M345 352c40 52 170 52 210 0" stroke="#634a34" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="430" width="400" height="82" rx="30" fill="#bb8d63"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#724b2e">Ragdoll</text>
+</svg>

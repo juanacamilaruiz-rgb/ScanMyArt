@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#fef7f1"/>
+  <circle cx="450" cy="300" r="220" fill="#f4cba8"/>
+  <path d="M320 250c0-110 95-170 130-170s130 60 130 170v75H320z" fill="#7f5538"/>
+  <ellipse cx="390" cy="285" rx="30" ry="44" fill="#4a3020"/>
+  <ellipse cx="510" cy="285" rx="30" ry="44" fill="#4a3020"/>
+  <circle cx="390" cy="293" r="9" fill="#fff"/>
+  <circle cx="510" cy="293" r="9" fill="#fff"/>
+  <path d="M345 355c40 50 170 50 210 0" stroke="#65462e" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="430" width="400" height="82" rx="30" fill="#c88c52"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#60412a">Scottish Fold</text>
+</svg>

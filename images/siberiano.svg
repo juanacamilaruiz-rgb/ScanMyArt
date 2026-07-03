@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#f1f9ff"/>
+  <circle cx="450" cy="300" r="225" fill="#dcecf8"/>
+  <path d="M305 240c0-110 90-170 145-170s145 60 145 170v80H305z" fill="#4c7186"/>
+  <ellipse cx="385" cy="285" rx="30" ry="44" fill="#2e4556"/>
+  <ellipse cx="515" cy="285" rx="30" ry="44" fill="#2e4556"/>
+  <circle cx="385" cy="295" r="9" fill="#fff"/>
+  <circle cx="515" cy="295" r="9" fill="#fff"/>
+  <path d="M350 355c40 55 160 55 200 0" stroke="#476273" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="430" width="400" height="82" rx="30" fill="#5f8aa8"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#37515f">Siberiano</text>
+</svg>

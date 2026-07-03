@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gato Siamés</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap');
+    :root { --bg:#fff8f2; --panel:#fff; --text:#4a2f21; --accent:#5d74c4; --accent2:#9db8ff; }
+    *{box-sizing:border-box;} body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#f7faff,#e5edff);color:var(--text);} .page{max-width:1000px;margin:24px auto;padding:24px;} .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,0.9);border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,0.08);margin-bottom:20px;} .brand{font-family:'Pacifico',cursive;font-size:1.4rem;color:var(--accent);} .topbar a{text-decoration:none;color:var(--text);margin-left:12px;font-weight:600;} .hero{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:var(--panel);padding:24px;border-radius:24px;box-shadow:0 12px 30px rgba(0,0,0,0.08);} .hero img{width:100%;height:100%;object-fit:cover;border-radius:20px;} .hero h1{font-size:2.2rem;margin:0 0 10px;color:var(--accent);} .hero p{line-height:1.8;color:#5f4d42;} .section{margin-top:20px;background:var(--panel);padding:20px;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.06);} .section h2{margin-top:0;color:var(--accent);} .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;} .card{padding:14px;background:#f4f7ff;border-radius:14px;} @media (max-width:760px){.hero,.cards{grid-template-columns:1fr;}} </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="topbar">
+      <div class="brand">Mundo Gato</div>
+      <div>
+        <a href="inicio.html">Inicio</a>
+        <a href="bengala.html">Bengala</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <img src="https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-06Siamese201.jpg?itok=j9A2IvjN" alt="Gato siamés" />
+      <div>
+        <h1>Gato Siamés</h1>
+        <p>El siamés es muy reconocible por su pelaje corto, sus ojos azules y sus manchas marcadas. Es activo, sociable y suele ser muy expresivo con su entorno.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Características</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Vocalización</h3>
+          <p>Suelo comunicarse con sonidos claros y suele llamar la atención con facilidad.</p>
+        </div>
+        <div class="card">
+          <h3>Compañía</h3>
+          <p>Disfruta de la compañía humana y suele ser muy interactivo durante el día.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

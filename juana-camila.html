@@ -3,36 +3,385 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juana Camila</title>
+  <title>Gatos modernos</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap');
+
+    :root {
+      --bg: #fff8ef;
+      --panel: #ffffff;
+      --text: #3f2a1d;
+      --accent: #ff7a59;
+      --accent-2: #ffb347;
+      --muted: #7a5a45;
+      --border: #f5dfc4;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fdf3e6;
-      color: #4a2f1f;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,179,71,0.28), transparent 28%),
+        linear-gradient(135deg, #fff8ef 0%, #ffe8c7 100%);
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 24px auto;
+      padding: 24px;
+    }
+
+    .topbar {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(90,53,28,0.08);
+      margin-bottom: 24px;
     }
+
+    .brand {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.45rem;
+      color: var(--accent);
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 16px;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      background: var(--panel);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2rem, 3.5vw, 3.1rem);
+      line-height: 1.1;
+      margin: 0 0 12px;
+      color: #2f1f13;
+    }
+
+    .hero-text p {
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .badge {
+      background: #fff2e2;
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 11px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #fff4e8;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .hero-photo {
+      position: relative;
+      min-height: 320px;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+    }
+
+    .floating-card {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(255,255,255,0.92);
+      padding: 12px 14px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-top: 24px;
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
     .card {
-      background: white;
-      padding: 30px;
+      padding: 16px;
+      background: #fff9f2;
       border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      max-width: 600px;
-      text-align: center;
+      border: 1px solid var(--border);
     }
-    h1 { color: #8a4b2a; }
-    a { display: inline-block; margin-top: 16px; color: #8a4b2a; font-weight: bold; }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #b25b2d;
+    }
+
+    .species-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .species-card {
+      display: block;
+      background: #fffaf4;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .species-card img {
+      width: 100%;
+        height: 180px;
+        object-fit: contain;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid #1f43630d;
+    }
+
+    .species-info {
+      padding: 12px 14px 14px;
+    }
+
+    .species-info h3 {
+      margin: 0 0 6px;
+      color: #b25b2d;
+    }
+
+    .species-info p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 190px;
+      object-fit: contain;
+      object-position: center;
+      background: #fff4e8;
+      padding: 6px;
+      border-radius: 16px;
+      border: 2px solid #ffd59b;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover { transform: scale(1.02); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px 0 8px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .cards, .gallery { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Juana Camila</h1>
-    <p>Esta página representa una visión creativa y personal dedicada a Juana Camila.</p>
-    <a href="ART.html">Volver a ART</a>
-  </div>
-</body>
-</html>
+  <div class="page">
+    <nav class="topbar">
+      <div class="brand">Mundo Gato</div>
+      <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#descubre">Descubre</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="ART.html" style="margin-bottom: 20px;">Volver a ART</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <div class="hero-badges">
+          <span class="badge">Elegancia</span>
+          <span class="badge">Curiosidad</span>
+          <span class="badge">Compañía</span>
+        </div>
+        <h1>Descubre el encanto de los gatos en una experiencia moderna.</h1>
+        <p>Los gatos combinan ternura, independencia y un aire misterioso que los convierte en uno de los animales más fascinantes del mundo. Aquí encontrarás una visión fresca y visual de su mundo.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#descubre">Explorar</a>
+          <a class="btn btn-secondary" href="#galeria">Ver galería</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://www.mirringo.com.co/Portals/mirringo/Images/articulos-actualidad-gatuna/gatos-y-sus-ojos-5-secretos-que-no-conocias/que-ven-los-gatos-que-nosotros-no-podemos-ver.jpg?ver=cCx12ocfKosfzLrs0_8_ZA%3D%3D" alt="Gato con mirada fascinante" />
+        <div class="floating-card">✨ Misterio, gracia y elegancia</div>
+      </div>
+    </section>
+
+    <section class="section" id="descubre">
+      <h2>Lo que hace especiales a los gatos</h2>
+      <p>Son animales ágiles, inteligentes y con una personalidad única. Su forma de comunicarse, su independencia y su forma de mostrar afecto hacen que cada gato sea especial.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Características</h3>
+          <p>Tienen orejas sensibles, uñas retráctiles y ojos muy expresivos, lo que les permite moverse con precisión y observar su entorno con gran atención.</p>
+        </div>
+        <div class="card">
+          <h3>Comportamiento</h3>
+          <p>Disfrutan el juego, la exploración y el descanso. Muchos se muestran cariñosos cuando se sienten seguros y cómodos en su hogar.</p>
+        </div>
+        <div class="card">
+          <h3>Cuidados</h3>
+          <p>Necesitan alimento balanceado, agua limpia, limpieza constante y tiempo de juego para mantenerse sanos y felices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Más especies de gatos</h2>
+      <p>Explora otras razas fascinantes y descubre cómo cada una tiene un carácter y aspecto diferente.</p>
+      <div class="species-grid">
+        <a class="species-card" href="persa.html">
+          <img src="imagenes/persa%20gato.jpg" alt="Gato persa" />
+          <div class="species-info">
+            <h3>Persa</h3>
+            <p>Elegante, tranquilo y con un pelaje largo muy llamativo.</p>
+          </div>
+        </a>
+        <a class="species-card" href="siames.html">
+          <img src="imagenes/siames%20gato.webp" alt="Gato siamés" />
+          <div class="species-info">
+            <h3>Siamés</h3>
+            <p>Muy expresivo, sociable y con una apariencia muy reconocible.</p>
+          </div>
+        </a>
+        <a class="species-card" href="bengala.html">
+          <img src="imagenes/bengala%20gato.jpg" alt="Gato bengala" />
+          <div class="species-info">
+            <h3>Bengala</h3>
+            <p>Activa, curiosa y con un pelaje que recuerda a un felino salvaje.</p>
+          </div>
+        </a>
+        <a class="species-card" href="mainecoon.html">
+          <img src="imagenes/maine%20coon%20gato.avif" alt="Maine Coon" />
+          <div class="species-info">
+            <h3>Maine Coon</h3>
+            <p>Grande, amigable y de gran personalidad, ideal para familias.</p>
+          </div>
+        </a>
+        <a class="species-card" href="siberiano.html">
+          <img src="imagenes/siberiano%20gato.jpg" alt="Gato siberiano" />
+          <div class="species-info">
+            <h3>Siberiano</h3>
+            <p>Resistente, cariñoso y con un pelaje denso muy hermoso.</p>
+          </div>
+        </a>
+        <a class="species-card" href="ragdoll.html">
+          <img src="imagenes/ragdoll%20gato.webp" alt="Gato Ragdoll" />
+          <div class="species-info">
+            <h3>Ragdoll</h3>
+            <p>Suave, dulce y muy tranquilo, ideal para quienes buscan un compañero sereno.</p>
+          </div>
+        </a>
+        <a class="species-card" href="persa.html">
+          <img src="imagenes/British%20shorthair%20gato.jpg" alt="Gato British Shorthair" />
+          <div class="species-info">
+            <h3>British Shorthair</h3>
+            <p>Robusto, elegante y de carácter equilibrado, con un aspecto muy clásico.</p>
+          </div>
+        </a>
+        <a class="species-card" href="siames.html">
+          <img src="imagenes/Scottish%20fold%20gato.jpg" alt="Gato Scottish Fold" />
+          <div class="species-info">
+            <h3>Scottish Fold</h3>
+            <p>Con orejas dobladas y un carácter afectuoso, es una raza muy peculiar.</p>
+          </div>
+        </a>
+        <a class="species-card" href="sphynx.html">
+          <img src="imagenes/Sphynx%20gato.jpg" alt="Gato Sphynx" />
+          <div class="species-info">
+            <h3>Sphynx</h3>
+            <p>Sin pelo y con una personalidad muy curiosa, destaca por su aspecto único.</p>
+          </div>
+        </a>

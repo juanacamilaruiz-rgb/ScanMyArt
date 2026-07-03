@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#fff3e3"/>
+  <circle cx="450" cy="300" r="220" fill="#f2d2b8"/>
+  <path d="M300 260c0-110 90-170 150-170s150 60 150 170v60H300z" fill="#8b5a3c"/>
+  <ellipse cx="360" cy="280" rx="32" ry="44" fill="#5b3a29"/>
+  <ellipse cx="540" cy="280" rx="32" ry="44" fill="#5b3a29"/>
+  <circle cx="360" cy="288" r="10" fill="#fff"/>
+  <circle cx="540" cy="288" r="10" fill="#fff"/>
+  <path d="M340 360c40 50 180 50 220 0" stroke="#6f4328" stroke-width="10" stroke-linecap="round"/>
+  <rect x="220" y="430" width="460" height="80" rx="30" fill="#c97a4d"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#7a4524">Persa</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#fff4e6"/>
+  <circle cx="450" cy="300" r="240" fill="#ebb17b"/>
+  <path d="M295 250c0-120 90-180 155-180s155 60 155 180v70H295z" fill="#8a4f25"/>
+  <ellipse cx="380" cy="285" rx="32" ry="46" fill="#4a2b17"/>
+  <ellipse cx="520" cy="285" rx="32" ry="46" fill="#4a2b17"/>
+  <circle cx="380" cy="295" r="10" fill="#fff"/>
+  <circle cx="520" cy="295" r="10" fill="#fff"/>
+  <path d="M340 350c40 55 180 55 220 0" stroke="#6d3a1a" stroke-width="10" stroke-linecap="round"/>
+  <rect x="240" y="430" width="420" height="86" rx="30" fill="#b86f2d"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#6a3816">Maine Coon</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#eef5ff"/>
+  <circle cx="450" cy="300" r="230" fill="#f7f7f7"/>
+  <path d="M320 240c0-110 100-170 130-170s130 60 130 170v70H320z" fill="#2f3a53"/>
+  <ellipse cx="375" cy="292" rx="28" ry="42" fill="#242b3d"/>
+  <ellipse cx="525" cy="292" rx="28" ry="42" fill="#242b3d"/>
+  <circle cx="375" cy="300" r="9" fill="#fff"/>
+  <circle cx="525" cy="300" r="9" fill="#fff"/>
+  <path d="M350 360c45 55 155 55 200 0" stroke="#45506b" stroke-width="10" stroke-linecap="round"/>
+  <rect x="260" y="430" width="380" height="80" rx="28" fill="#6f8bd8"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#33415f">Siamés</text>
+</svg>

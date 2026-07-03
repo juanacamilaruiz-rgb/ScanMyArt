@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#f9f6f2"/>
+  <circle cx="450" cy="300" r="220" fill="#cdb49a"/>
+  <path d="M315 250c0-105 95-165 135-165s135 60 135 165v70H315z" fill="#6c4a2e"/>
+  <ellipse cx="390" cy="285" rx="30" ry="44" fill="#403021"/>
+  <ellipse cx="510" cy="285" rx="30" ry="44" fill="#403021"/>
+  <circle cx="390" cy="293" r="9" fill="#fff"/>
+  <circle cx="510" cy="293" r="9" fill="#fff"/>
+  <path d="M345 352c40 50 170 50 210 0" stroke="#54412b" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="430" width="400" height="82" rx="30" fill="#9d7850"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#503723">British Shorthair</text>
+</svg>

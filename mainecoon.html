@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maine Coon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap');
+    :root { --bg:#fff7ef; --panel:#fff; --text:#4a2e1c; --accent:#b16a2b; --accent2:#f0b56f; }
+    *{box-sizing:border-box;} body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#fff6eb,#f8dfbe);color:var(--text);} .page{max-width:1000px;margin:24px auto;padding:24px;} .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,0.9);border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,0.08);margin-bottom:20px;} .brand{font-family:'Pacifico',cursive;font-size:1.4rem;color:var(--accent);} .topbar a{text-decoration:none;color:var(--text);margin-left:12px;font-weight:600;} .hero{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:var(--panel);padding:24px;border-radius:24px;box-shadow:0 12px 30px rgba(0,0,0,0.08);} .hero img{width:100%;height:100%;object-fit:cover;border-radius:20px;} .hero h1{font-size:2.2rem;margin:0 0 10px;color:var(--accent);} .hero p{line-height:1.8;color:#634330;} .section{margin-top:20px;background:var(--panel);padding:20px;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.06);} .section h2{margin-top:0;color:var(--accent);} .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;} .card{padding:14px;background:#fff8ef;border-radius:14px;} @media (max-width:760px){.hero,.cards{grid-template-columns:1fr;}} </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="topbar">
+      <div class="brand">Mundo Gato</div>
+      <div>
+        <a href="inicio.html">Inicio</a>
+        <a href="siberiano.html">Siberiano</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <img src="https://mascooriente.com/wp-content/uploads/2025/07/maine_coon.jpeg" alt="Maine Coon" />
+      <div>
+        <h1>Maine Coon</h1>
+        <p>El Maine Coon es una raza grande, fuerte y muy amable. Su pelaje denso y su personalidad gentil lo convierten en uno de los gatos más queridos por las familias.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Características</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Tamaño</h3>
+          <p>Es una de las razas más grandes entre los gatos domésticos, con un cuerpo robusto y elegante.</p>
+        </div>
+        <div class="card">
+          <h3>Temperamento</h3>
+          <p>Su carácter suele ser paciente, sociable y muy afectuoso con los humanos.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

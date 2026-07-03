@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#fdf5ed"/>
+  <circle cx="450" cy="300" r="220" fill="#e6c7a3"/>
+  <path d="M320 250c0-110 95-170 130-170s130 60 130 170v80H320z" fill="#8a6748"/>
+  <ellipse cx="390" cy="285" rx="30" ry="44" fill="#4b3422"/>
+  <ellipse cx="510" cy="285" rx="30" ry="44" fill="#4b3422"/>
+  <circle cx="390" cy="293" r="9" fill="#fff"/>
+  <circle cx="510" cy="293" r="9" fill="#fff"/>
+  <path d="M345 355c40 50 170 50 210 0" stroke="#6f472f" stroke-width="10" stroke-linecap="round"/>
+  <rect x="250" y="430" width="400" height="82" rx="30" fill="#c79259"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#74482e">Sphynx</text>
+</svg>

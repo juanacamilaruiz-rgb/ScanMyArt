@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" rx="32" fill="#f4fff2"/>
+  <circle cx="450" cy="300" r="230" fill="#d7efc7"/>
+  <path d="M300 255c0-110 90-170 150-170s150 60 150 170v70H300z" fill="#3f6f3c"/>
+  <path d="M330 330c30 45 210 45 240 0" stroke="#2c4d2b" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="380" cy="290" r="30" fill="#2c4d2b"/>
+  <circle cx="520" cy="290" r="30" fill="#2c4d2b"/>
+  <path d="M350 155c45-35 160-35 205 0" stroke="#5f8f49" stroke-width="12" stroke-linecap="round"/>
+  <rect x="240" y="430" width="420" height="80" rx="30" fill="#5fa65b"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#2f5a31">Bengala</text>
+</svg>
